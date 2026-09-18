@@ -1,0 +1,17 @@
+{
+  "name": "super-artifacts",
+  "description": "Connect to Super Artifacts over OAuth, then /init to see what you can build. Works from Claude Code, Cursor, OpenCode, Pi and any CLI tool with a plugin system.",
+  "version": "0.3.0",
+  "author": { "name": "Super Artifacts" },
+  "homepage": "https://superartifacts.app",
+  "keywords": [
+    "video",
+    "pull-request",
+    "review",
+    "walkthrough",
+    "artifacts",
+    "oauth",
+    "proof",
+    "getting-started"
+  ]
+}
