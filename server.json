@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.Super-Artifacts/super-artifacts",
+  "title": "Super Artifacts",
+  "description": "Publish live pages from any agent, collect what visitors submit, and read it back.",
+  "version": "0.56.1",
+  "websiteUrl": "https://superartifacts.app",
+  "repository": {
+    "url": "https://github.com/Super-Artifacts/plugins",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://superartifacts.app/mcp"
+    }
+  ]
+}

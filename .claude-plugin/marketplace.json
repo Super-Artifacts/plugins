@@ -1,0 +1,15 @@
+{
+  "name": "super-artifacts",
+  "description": "Plugins for Super Artifacts — connect over OAuth, build and publish artifacts from any CLI tool.",
+  "owner": {
+    "name": "Super Artifacts",
+    "url": "https://superartifacts.app"
+  },
+  "plugins": [
+    {
+      "name": "super-artifacts",
+      "source": "./super-artifacts",
+      "description": "Connect to Super Artifacts over OAuth, then /init to see what you can build. Works from Claude Code, Cursor, OpenCode, Pi and any CLI tool with a plugin system."
+    }
+  ]
+}
