@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Super Artifacts — recorder check</title>
+<style>
+  :root { color-scheme: light dark; --ink:#12131a; --paper:#fbfbfd; --muted:#6b6f80; --line:#e4e5ec; --accent:#3563e9; }
+  @media (prefers-color-scheme: dark) {
+    :root { --ink:#f2f3f7; --paper:#101116; --muted:#9aa0b4; --line:#2a2c38; --accent:#6d8dff; }
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; min-height:100vh; background:var(--paper); color:var(--ink);
+         font:400 16px/1.6 ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+         display:grid; place-items:center; padding:48px 24px 140px; }
+  main { width:min(46rem,100%); }
+  h1 { margin:0 0 6px; font-size:26px; letter-spacing:-0.02em; }
+  p.lede { margin:0 0 28px; color:var(--muted); }
+  .row { display:flex; gap:12px; flex-wrap:wrap; margin-bottom:28px; }
+  .card { flex:1 1 12rem; border:1px solid var(--line); border-radius:12px; padding:16px; }
+  .card h2 { margin:0 0 4px; font-size:14px; }
+  .card p { margin:0; color:var(--muted); font-size:13px; }
+  #panel { border:1px solid var(--line); border-radius:12px; padding:20px; }
+  #panel[hidden] { display:none; }
+  button { font:inherit; font-size:14px; padding:9px 16px; border-radius:9px; border:none;
+           background:var(--accent); color:#fff; cursor:pointer; }
+  code { font:400 13px/1 ui-monospace,SFMono-Regular,Menlo,monospace; color:var(--muted); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Recorder check</h1>
+  <p class="lede">A fixed page, so a failure here is about the machine and not about the tour.</p>
+
+  <div class="row">
+    <div class="card"><h2>Capture</h2><p>Chromium records the viewport.</p></div>
+    <div class="card"><h2>Captions</h2><p>Burned into the frame, readable on mute.</p></div>
+    <div class="card" id="upload"><h2>Upload</h2><p>The mp4 rides beside the page.</p></div>
+  </div>
+
+  <button type="button" id="go">Show the result</button>
+  <div id="panel" hidden>
+    <p>Published as a <code>video</code> artifact, private until it is opened.</p>
+  </div>
+</main>
+<script>
+  document.getElementById('go').addEventListener('click', () => {
+    document.getElementById('panel').hidden = false
+  })
+</script>
+</body>
+</html>

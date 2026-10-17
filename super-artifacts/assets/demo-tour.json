@@ -1,0 +1,21 @@
+{
+  "viewport": { "width": 1280, "height": 720 },
+  "changes": [
+    {
+      "title": "The recorder works on this machine",
+      "steps": [
+        { "goto": "/demo-page.html" },
+        { "wait": 400 },
+        { "say": "This is a sample, recorded here — not a video downloaded from anywhere." },
+        {
+          "highlight": "#upload",
+          "say": "Every part a real walkthrough uses is exercised: capture, captions, transcode, upload."
+        },
+        {
+          "click": "#go",
+          "say": "It publishes as a private artifact, then opens it so a reviewer needs no sign-in."
+        }
+      ]
+    }
+  ]
+}
