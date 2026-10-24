@@ -1,0 +1,24 @@
+{
+  "name": "super-artifacts",
+  "displayName": "Super Artifacts",
+  "description": "Publish what your agent builds as a live private URL, collect what visitors submit, and read it back, through the hosted Super Artifacts MCP server.",
+  "version": "0.135.0",
+  "author": {
+    "name": "Super Artifacts",
+    "url": "https://superartifacts.app"
+  },
+  "homepage": "https://superartifacts.app",
+  "license": "MIT",
+  "documentationUrl": "https://superartifacts.app/docs",
+  "privacyPolicyUrl": "https://superartifacts.app/privacy",
+  "supportUrl": "https://superartifacts.app/contact",
+  "keywords": [
+    "artifacts",
+    "publish",
+    "hosting",
+    "forms",
+    "data",
+    "mcp",
+    "oauth"
+  ]
+}
