@@ -1,0 +1,12 @@
+{
+  "name": "super-artifacts",
+  "interface": { "displayName": "Super Artifacts" },
+  "plugins": [
+    {
+      "name": "super-artifacts",
+      "source": { "source": "local", "path": "./openai" },
+      "policy": { "installation": "AVAILABLE", "authentication": "ON_INSTALL" },
+      "category": "Productivity"
+    }
+  ]
+}
