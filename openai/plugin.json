@@ -1,0 +1,48 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "super-artifacts",
+  "version": "0.174.0",
+  "description": "Publish pages, forms and trackers as live private URLs through the hosted Super Artifacts MCP server, and read back what visitors submit.",
+  "author": {
+    "name": "Super Artifacts",
+    "url": "https://superartifacts.app"
+  },
+  "homepage": "https://superartifacts.app",
+  "repository": "https://github.com/Super-Artifacts/plugins",
+  "license": "MIT",
+  "keywords": [
+    "artifacts",
+    "publish",
+    "hosting",
+    "forms",
+    "mcp",
+    "oauth"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Super Artifacts",
+        "shortDescription": "Publish live pages from chat",
+        "longDescription": "Super Artifacts gives the things your agent builds somewhere to live. Ask for a page, a form, a tracker or a walkthrough and get back a live URL that opens on a phone. Artifacts are private until you decide otherwise.\n\nAn artifact can declare what it collects. Visitors' answers land in a hosted database, and the same agent reads them back as rows or as totals, then publishes a new version at the same address.\n\nYou sign in once over OAuth. A consent page names the account the connection would publish to, connecting publishes nothing, and you can revoke it from your agents page at any time. Tools cover publishing, versions, collected data, templates, projects, sharing and comments.",
+        "developerName": "Super Artifacts",
+        "category": "Productivity",
+        "capabilities": [
+          "Read",
+          "Write"
+        ],
+        "websiteURL": "https://superartifacts.app",
+        "supportURL": "https://superartifacts.app/contact",
+        "privacyPolicyURL": "https://superartifacts.app/privacy",
+        "termsOfServiceURL": "https://superartifacts.app/terms",
+        "defaultPrompt": [
+          "Publish a one-page supper-club reservation form and give me the link.",
+          "Show me what people have submitted to my reservation page.",
+          "Add a vegetarian option to my reservation form and publish a new version."
+        ],
+        "brandColor": "#6b1f2e",
+        "brandColorDark": "#f0a3ae",
+        "logo": "./assets/logo.png"
+      }
+    }
+  }
+}

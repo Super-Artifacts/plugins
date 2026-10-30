@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "super-artifacts": {
+      "type": "http",
+      "url": "https://superartifacts.app/mcp",
+      "auth": "oauth"
+    }
+  }
+}
