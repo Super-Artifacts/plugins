@@ -1,0 +1,33 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "super-artifacts",
+  "version": "0.196.0",
+  "description": "Publish pages, forms and trackers as live private URLs through the hosted Super Artifacts MCP server, and read back what visitors submit.",
+  "author": {
+    "name": "Super Artifacts",
+    "url": "https://superartifacts.app"
+  },
+  "homepage": "https://superartifacts.app",
+  "repository": "https://github.com/Super-Artifacts/plugins",
+  "license": "MIT",
+  "keywords": [
+    "artifacts",
+    "publish",
+    "hosting",
+    "forms",
+    "mcp",
+    "oauth"
+  ],
+  "extensions": {
+    "com.nousresearch.hermes": {
+      "config_schema": {
+        "api_key": {
+          "type": "secret",
+          "env": "SUPER_ARTIFACTS_KEY",
+          "label": "Super Artifacts key",
+          "description": "Connect from the Super Artifacts dashboard tab, or paste a key from superartifacts.app/api-keys. Saved only in this profile."
+        }
+      }
+    }
+  }
+}
