@@ -1,0 +1,9 @@
+{
+  "name": "super-artifacts",
+  "label": "Super Artifacts",
+  "description": "Connect your account and open recent artifacts.",
+  "icon": "ExternalLink",
+  "tab": { "path": "/super-artifacts", "position": "after:skills" },
+  "entry": "dist/index.js",
+  "api": "plugin_api.py"
+}

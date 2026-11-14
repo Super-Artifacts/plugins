@@ -1,0 +1,7 @@
+{
+  "name": "super-artifacts",
+  "version": "0.233.0",
+  "private": true,
+  "description": "Publish what your agent builds as a live private URL, collect what visitors submit, and read it back, through the hosted Super Artifacts MCP server.",
+  "license": "MIT"
+}
